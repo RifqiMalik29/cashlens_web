@@ -60,7 +60,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-600 text-sm leading-relaxed flex-1">"{t.quote}"</p>
+              <p className="text-gray-600 text-sm leading-relaxed flex-1">&ldquo;{t.quote}&rdquo;</p>
 
               {/* Author */}
               <div className="flex items-center gap-3">
