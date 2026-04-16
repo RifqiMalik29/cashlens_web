@@ -45,7 +45,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           >
-            <div className="relative w-64 h-[500px] rounded-[2.5rem] border-4 border-gray-200 shadow-2xl overflow-hidden bg-gradient-to-b from-primary to-secondary flex items-center justify-center">
+            <div role="img" aria-label="CashLens app screenshot placeholder" className="relative w-64 h-[500px] rounded-[2.5rem] border-4 border-gray-200 shadow-2xl overflow-hidden bg-gradient-to-b from-primary to-secondary flex items-center justify-center">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-200 rounded-b-2xl" />
               <span className="text-white font-bold text-xl opacity-60">CashLens</span>
             </div>

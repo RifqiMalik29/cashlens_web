@@ -47,7 +47,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <a
           href="#download"
-          className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-opacity-90 transition-all"
+          className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-all"
         >
           Start Budgeting Today
         </a>
@@ -57,6 +57,8 @@ export default function Navbar() {
           className="md:hidden text-dark"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -64,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t px-4 py-4 flex flex-col gap-4 shadow-md">
+        <div id="mobile-menu" className="md:hidden bg-white border-t px-4 py-4 flex flex-col gap-4 shadow-md">
           {navLinks.map((link) => (
             <a
               key={link.href}

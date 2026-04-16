@@ -16,7 +16,7 @@ export default function DownloadCTA() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Take control of your finances today.
           </h2>
-          <p className="text-white text-opacity-80 text-lg mb-10 max-w-md mx-auto opacity-90">
+          <p className="text-white/80 text-lg mb-10 max-w-md mx-auto">
             Download CashLens free and start scanning receipts in minutes.
           </p>
 

@@ -54,7 +54,7 @@ export default function ProblemSolution() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary bg-opacity-10 mb-6">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-6">
               <CheckCircle2 className="text-primary" size={24} />
             </div>
             <h2 className="text-3xl font-bold text-dark mb-4">

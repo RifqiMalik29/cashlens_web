@@ -53,9 +53,9 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col gap-4"
             >
               {/* Stars */}
-              <div className="flex gap-1">
+              <div className="flex gap-1" role="img" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} size={16} className="fill-yellow-400 text-yellow-400" />
+                  <Star key={j} size={16} className="fill-yellow-400 text-yellow-400" aria-hidden="true" />
                 ))}
               </div>
 
