@@ -106,8 +106,7 @@ export default function PrivacyContent() {
               <section className="pt-8 border-t border-gray-100">
                 <h2 className="text-2xl font-bold text-dark mb-4">5. Contact Us</h2>
                 <p className="text-gray-600">
-                  <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a><br />
-                  <strong>GitHub:</strong> <a href="https://github.com/RifqiMalik29/cashlens" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://github.com/RifqiMalik29/cashlens</a>
+                  <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a>
                 </p>
               </section>
             </div>
@@ -156,8 +155,7 @@ export default function PrivacyContent() {
               <section className="pt-8 border-t border-gray-100">
                 <h2 className="text-2xl font-bold text-dark mb-4">5. Hubungi Kami</h2>
                 <p className="text-gray-600">
-                  <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a><br />
-                  <strong>GitHub:</strong> <a href="https://github.com/RifqiMalik29/cashlens" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://github.com/RifqiMalik29/cashlens</a>
+                  <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a>
                 </p>
               </section>
             </div>
