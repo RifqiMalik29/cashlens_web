@@ -1,7 +1,8 @@
 const navLinks = [
-  { label: 'Features', href: '#features' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Download', href: '#download' },
+  { label: 'Features', href: '/#features' },
+  { label: 'How It Works', href: '/#how-it-works' },
+  { label: 'Download', href: '/#download' },
+  { label: 'Privacy Policy', href: '/privacy' },
 ]
 
 export default function Footer() {

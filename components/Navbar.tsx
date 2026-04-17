@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Features', href: '#features' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Download', href: '#download' },
+  { label: 'Features', href: '/#features' },
+  { label: 'How It Works', href: '/#how-it-works' },
+  { label: 'Download', href: '/#download' },
 ]
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-primary">
+        <a href="/" className="text-xl font-bold text-primary">
           CashLens
         </a>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="#download"
+          href="/#download"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-all"
         >
           Start Budgeting Today
@@ -78,7 +78,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#download"
+            href="/#download"
             onClick={() => setMenuOpen(false)}
             className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold"
           >
