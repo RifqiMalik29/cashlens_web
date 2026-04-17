@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 
 const navLinks = [
   { label: 'Features', href: '/#features' },
@@ -27,30 +28,30 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="/" className="text-xl font-bold text-primary">
+        <Link href="/" className="text-xl font-bold text-primary">
           CashLens
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-dark hover:text-primary transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* Desktop CTA */}
-        <a
+        <Link
           href="/#download"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-all"
         >
           Start Budgeting Today
-        </a>
+        </Link>
 
         {/* Mobile hamburger */}
         <button
@@ -68,22 +69,22 @@ export default function Navbar() {
       {menuOpen && (
         <div id="mobile-menu" className="md:hidden bg-white border-t px-4 py-4 flex flex-col gap-4 shadow-md">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className="text-sm font-medium text-dark hover:text-primary transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href="/#download"
             onClick={() => setMenuOpen(false)}
             className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold"
           >
             Start Budgeting Today
-          </a>
+          </Link>
         </div>
       )}
     </header>

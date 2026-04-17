@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, Globe } from 'lucide-react'
 import { motion } from 'framer-motion'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 type Language = 'EN' | 'ID'
 
@@ -13,35 +15,37 @@ export default function PrivacyContent() {
   const toggleLang = () => setLang((prev) => (prev === 'EN' ? 'ID' : 'EN'))
 
   return (
-    <main className="min-h-screen bg-white text-dark font-sans py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        {/* Header Navigation */}
-        <div className="flex items-center justify-between mb-12">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-primary hover:underline font-medium transition-all"
-          >
-            <ArrowLeft size={20} />
-            Back to Home
-          </Link>
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-white text-dark font-sans pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          {/* Header Navigation */}
+          <div className="flex items-center justify-between mb-12">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-primary hover:underline font-medium transition-all"
+            >
+              <ArrowLeft size={20} />
+              Back to Home
+            </Link>
 
-          <button
-            onClick={toggleLang}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 text-sm font-semibold hover:bg-secondary transition-all"
-          >
-            <Globe size={18} />
-            {lang === 'EN' ? 'Lihat Bahasa Indonesia' : 'Switch to English'}
-          </button>
-        </div>
+            <button
+              onClick={toggleLang}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 text-sm font-semibold hover:bg-secondary transition-all"
+            >
+              <Globe size={18} />
+              {lang === 'EN' ? 'Lihat Bahasa Indonesia' : 'Switch to English'}
+            </button>
+          </div>
 
-        {/* Content */}
-        <motion.article
-          key={lang}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="prose prose-slate max-w-none"
-        >
+          {/* Content */}
+          <motion.article
+            key={lang}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="prose prose-slate prose-a:text-primary prose-a:no-underline hover:prose-a:underline max-w-none"
+          >
           {lang === 'EN' ? (
             <div className="space-y-8">
               <div>
@@ -161,5 +165,7 @@ export default function PrivacyContent() {
         </motion.article>
       </div>
     </main>
-  )
+    <Footer />
+  </>
+)
 }
