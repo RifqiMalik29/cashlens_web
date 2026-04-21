@@ -82,6 +82,24 @@ export default function PrivacyContent() {
                       <li><strong>Crash Reports:</strong> Error logs via Sentry.</li>
                     </ul>
                   </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-dark">2.3 Camera Access</h3>
+                    <p className="mt-2 text-gray-600">
+                      The app requests camera permission to scan receipts. Photos are processed on-device — only the extracted text and data are sent to Google Cloud (Gemini AI) for parsing. No photos are stored or uploaded.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-dark">2.4 Notification Access</h3>
+                    <p className="mt-2 text-gray-600">
+                      The app reads incoming notifications (e.g. bank transaction alerts) to automatically log transactions. Notification content is sent to our backend for processing. This data is used solely to create transaction records and is not retained beyond processing.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-dark">2.5 Financial Data</h3>
+                    <p className="mt-2 text-gray-600">
+                      The app collects transaction amounts, merchant names, dates, and categories — entered manually, scanned from receipts, or parsed from bank notifications.
+                    </p>
+                  </div>
                 </div>
               </section>
 
