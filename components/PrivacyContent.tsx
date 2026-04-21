@@ -164,6 +164,24 @@ export default function PrivacyContent() {
                   <li><strong>Anggaran & Kategori:</strong> Batasan dan label yang Anda buat.</li>
                   <li><strong>Preferensi:</strong> Pengaturan bahasa, mata uang, dan tema.</li>
                 </ul>
+                  <div className="mt-4">
+                    <h3 className="text-lg font-semibold text-dark">2.3 Akses Kamera</h3>
+                    <p className="mt-2 text-gray-600">
+                      Aplikasi meminta izin kamera untuk memindai struk belanja. Foto diproses di perangkat — hanya teks dan data yang diekstrak yang dikirim ke Google Cloud (Gemini AI) untuk diproses. Tidak ada foto yang disimpan atau diunggah.
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="text-lg font-semibold text-dark">2.4 Akses Notifikasi</h3>
+                    <p className="mt-2 text-gray-600">
+                      Aplikasi membaca notifikasi masuk (misalnya, notifikasi transaksi bank) untuk mencatat transaksi secara otomatis. Konten notifikasi dikirim ke server kami untuk diproses. Data ini hanya digunakan untuk membuat catatan transaksi dan tidak disimpan setelah diproses.
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="text-lg font-semibold text-dark">2.5 Data Keuangan</h3>
+                    <p className="mt-2 text-gray-600">
+                      Aplikasi mengumpulkan jumlah transaksi, nama pedagang, tanggal, dan kategori — baik yang dimasukkan secara manual, dipindai dari struk, maupun diurai dari notifikasi bank.
+                    </p>
+                  </div>
               </section>
 
               <section>
