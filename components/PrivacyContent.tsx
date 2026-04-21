@@ -91,7 +91,7 @@ export default function PrivacyContent() {
                   <div>
                     <h3 className="text-lg font-semibold text-dark">2.4 Notification Access</h3>
                     <p className="mt-2 text-gray-600">
-                      The app reads incoming notifications (e.g. bank transaction alerts) to automatically log transactions. Notification content is sent to our backend for processing. This data is used solely to create transaction records and is not retained beyond processing.
+                      The app reads incoming notifications (e.g., bank transaction alerts) to automatically log transactions. Notification content is sent to our backend for processing. This data is used solely to create transaction records and is not retained beyond processing.
                     </p>
                   </div>
                   <div>
