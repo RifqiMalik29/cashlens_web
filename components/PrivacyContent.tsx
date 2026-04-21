@@ -104,7 +104,19 @@ export default function PrivacyContent() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-dark mb-4">3. Third-Party Services</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">3. How We Use Your Data</h2>
+                <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                  <li><strong>Transaction tracking:</strong> Store and display your income and expense records.</li>
+                  <li><strong>Receipt parsing:</strong> Send extracted receipt text to Google Cloud (Gemini AI) to identify amounts, merchants, and dates.</li>
+                  <li><strong>Notification parsing:</strong> Send bank notification content to our backend to automatically log transactions.</li>
+                  <li><strong>Budget alerts:</strong> Analyze your spending against set limits to trigger in-app notifications.</li>
+                  <li><strong>App improvement:</strong> Use anonymized crash reports and usage patterns to fix bugs and improve features.</li>
+                  <li><strong>Authentication:</strong> Verify your identity via email through Supabase.</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-dark mb-4">4. Third-Party Services</h2>
                 <p className="text-gray-600 mb-4">We use trusted providers to power CashLens:</p>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600">
                   <li><strong>Supabase:</strong> Cloud sync & authentication.</li>
@@ -113,7 +125,7 @@ export default function PrivacyContent() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-dark mb-4">4. Your Rights</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">5. Your Rights</h2>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600">
                   <li><strong>Access:</strong> Request a copy of your data via <code>cashlens.app@gmail.com</code>.</li>
                   <li><strong>Erasure:</strong> Delete your account via Settings or by emailing us.</li>
@@ -122,7 +134,7 @@ export default function PrivacyContent() {
               </section>
 
               <section className="pt-8 border-t border-gray-100">
-                <h2 className="text-2xl font-bold text-dark mb-4">5. Contact Us</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">6. Contact Us</h2>
                 <p className="text-gray-600">
                   <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a>
                 </p>
