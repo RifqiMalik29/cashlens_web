@@ -185,7 +185,19 @@ export default function PrivacyContent() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-dark mb-4">3. Layanan Pihak Ketiga</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">3. Bagaimana Kami Menggunakan Data Anda</h2>
+                <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                  <li><strong>Pencatatan transaksi:</strong> Menyimpan dan menampilkan catatan pemasukan dan pengeluaran Anda.</li>
+                  <li><strong>Pemindaian struk:</strong> Mengirim teks struk yang diekstrak ke Google Cloud (Gemini AI) untuk mengidentifikasi jumlah, pedagang, dan tanggal.</li>
+                  <li><strong>Pemrosesan notifikasi:</strong> Mengirim konten notifikasi bank ke server kami untuk mencatat transaksi secara otomatis.</li>
+                  <li><strong>Peringatan anggaran:</strong> Menganalisis pengeluaran Anda terhadap batas yang ditetapkan untuk memicu notifikasi dalam aplikasi.</li>
+                  <li><strong>Peningkatan aplikasi:</strong> Menganalisis laporan crash dan pola penggunaan yang dianonimkan untuk memperbaiki bug dan meningkatkan fitur.</li>
+                  <li><strong>Autentikasi:</strong> Memverifikasi identitas Anda melalui email menggunakan Supabase.</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-dark mb-4">4. Layanan Pihak Ketiga</h2>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600">
                   <li><strong>Supabase:</strong> Sinkronisasi awan & autentikasi.</li>
                   <li><strong>Google Cloud (Gemini AI):</strong> Pemindaian struk belanja. Teks struk dikirim sementara untuk diproses dan tidak digunakan untuk pelatihan AI.</li>
@@ -193,7 +205,7 @@ export default function PrivacyContent() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-dark mb-4">4. Hak Anda</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">5. Hak Anda</h2>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600">
                   <li><strong>Akses:</strong> Meminta salinan data Anda melalui <code>cashlens.app@gmail.com</code>.</li>
                   <li><strong>Penghapusan:</strong> Menghapus akun melalui Pengaturan atau email.</li>
@@ -201,7 +213,7 @@ export default function PrivacyContent() {
               </section>
 
               <section className="pt-8 border-t border-gray-100">
-                <h2 className="text-2xl font-bold text-dark mb-4">5. Hubungi Kami</h2>
+                <h2 className="text-2xl font-bold text-dark mb-4">6. Hubungi Kami</h2>
                 <p className="text-gray-600">
                   <strong>Email:</strong> <a href="mailto:cashlens.app@gmail.com" className="text-primary hover:underline">cashlens.app@gmail.com</a>
                 </p>
