@@ -191,7 +191,7 @@ export default function PrivacyContent() {
                   <li><strong>Pemindaian struk:</strong> Mengirim teks struk yang diekstrak ke Google Cloud (Gemini AI) untuk mengidentifikasi jumlah, pedagang, dan tanggal.</li>
                   <li><strong>Pemrosesan notifikasi:</strong> Mengirim konten notifikasi bank ke server kami untuk mencatat transaksi secara otomatis.</li>
                   <li><strong>Peringatan anggaran:</strong> Menganalisis pengeluaran Anda terhadap batas yang ditetapkan untuk memicu notifikasi dalam aplikasi.</li>
-                  <li><strong>Peningkatan aplikasi:</strong> Menganalisis laporan crash dan pola penggunaan yang dianonimkan untuk memperbaiki bug dan meningkatkan fitur.</li>
+                  <li><strong>Peningkatan aplikasi:</strong> Menganalisis laporan crash yang dianonimkan dan pola penggunaan untuk memperbaiki bug dan meningkatkan fitur.</li>
                   <li><strong>Autentikasi:</strong> Memverifikasi identitas Anda melalui email menggunakan Supabase.</li>
                 </ul>
               </section>
