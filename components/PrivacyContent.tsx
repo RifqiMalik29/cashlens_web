@@ -110,7 +110,7 @@ export default function PrivacyContent() {
                   <li><strong>Receipt parsing:</strong> Send extracted receipt text to Google Cloud (Gemini AI) to identify amounts, merchants, and dates.</li>
                   <li><strong>Notification parsing:</strong> Send bank notification content to our backend to automatically log transactions.</li>
                   <li><strong>Budget alerts:</strong> Analyze your spending against set limits to trigger in-app notifications.</li>
-                  <li><strong>App improvement:</strong> Use anonymized crash reports and usage patterns to fix bugs and improve features.</li>
+                  <li><strong>App improvement:</strong> Analyze anonymized crash reports and usage patterns to fix bugs and improve features.</li>
                   <li><strong>Authentication:</strong> Verify your identity via email through Supabase.</li>
                 </ul>
               </section>
