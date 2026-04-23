@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 
 export const metadata = {
   title: "Delete Account | Cashlens",
@@ -52,14 +51,6 @@ export default function DeleteAccount() {
                   the deletion.
                 </li>
               </ol>
-              <div className="relative w-64 h-[500px] flex-shrink-0 bg-gray-100 rounded-3xl overflow-hidden shadow-md border-4 border-gray-900">
-                <Image
-                  src="/mockup.png"
-                  alt="Cashlens App Account Deletion Mockup"
-                  fill
-                  className="object-cover"
-                />
-              </div>
             </div>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">

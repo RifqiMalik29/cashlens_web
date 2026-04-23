@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -12,15 +13,15 @@ export default function Hero() {
             className="flex-1 text-center md:text-left"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-dark leading-tight">
-              Your money,{' '}
+              Your money,{" "}
               <span className="text-primary">finally under control</span>
             </h1>
             <p className="mt-6 text-lg text-gray-500 max-w-md mx-auto md:mx-0">
-              Scan, track, and budget your expenses — CashLens turns your receipts
-              into instant insight.
+              Scan, track, and budget your expenses — CashLens turns your
+              receipts into instant insight.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
@@ -38,20 +39,26 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* App mockup placeholder */}
+          {/* App mockup */}
           <motion.div
             className="flex-1 flex justify-center"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            <div role="img" aria-label="CashLens app screenshot placeholder" className="relative w-64 h-[500px] rounded-[2.5rem] border-4 border-gray-200 shadow-2xl overflow-hidden bg-gradient-to-b from-primary to-secondary flex items-center justify-center">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-200 rounded-b-2xl" />
-              <span className="text-white font-bold text-xl opacity-60">CashLens</span>
+            <div className="relative w-64 h-[500px] rounded-[2.5rem] border-4 border-gray-200 shadow-2xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-200 rounded-b-2xl z-10" />
+              <Image
+                src="/mockup.png"
+                alt="CashLens app screenshot"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

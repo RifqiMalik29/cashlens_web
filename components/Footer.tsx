@@ -1,11 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const navLinks = [
-  { label: 'Features', href: '/#features' },
-  { label: 'How It Works', href: '/#how-it-works' },
-  { label: 'Download', href: '/#download' },
-  { label: 'Privacy Policy', href: '/privacy' },
-]
+  { label: "Features", href: "/#features" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Download", href: "/#download" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Delete Account", href: "/delete-account" },
+];
 
 export default function Footer() {
   return (
@@ -42,5 +43,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
