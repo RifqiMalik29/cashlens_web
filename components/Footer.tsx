@@ -8,13 +8,6 @@ const productLinks = [
   { label: 'Harga', href: '/pricing' },
 ]
 
-const companyLinks = [
-  { label: 'Tentang', href: '#' },
-  { label: 'Blog', href: '#' },
-  { label: 'Karier', href: '#' },
-  { label: 'Kontak', href: '#' },
-]
-
 const legalLinks = [
   { label: 'Privacy Policy', href: '/privacy' },
   { label: 'Syarat & Ketentuan', href: '/terms' },
@@ -25,7 +18,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-16 pb-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr] gap-10">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-4">
@@ -58,18 +51,6 @@ export default function Footer() {
                 <Link key={link.label} href={link.href} className="text-darktint-muted hover:text-white transition-colors">
                   {link.label}
                 </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Perusahaan */}
-          <div>
-            <div className="font-display font-semibold text-[15px] text-white mb-4">Perusahaan</div>
-            <div className="flex flex-col gap-2.5 text-sm">
-              {companyLinks.map((link) => (
-                <a key={link.label} href={link.href} className="text-darktint-muted hover:text-white transition-colors">
-                  {link.label}
-                </a>
               ))}
             </div>
           </div>

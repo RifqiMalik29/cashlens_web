@@ -25,26 +25,26 @@ export default function DownloadCTA() {
               Gratis diunduh. Tanpa iklan mengganggu. Cukup foto struk pertamamu.
             </p>
             <div className="flex flex-wrap gap-3.5 mt-8">
-              <a
-                href="#"
-                className="inline-flex items-center gap-2.5 bg-ink text-white border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
+              <span
+                aria-disabled="true"
+                className="inline-flex items-center gap-2.5 bg-ink text-white/50 border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 cursor-not-allowed"
               >
                 <Apple size={26} />
                 <span className="text-left">
-                  <span className="block text-[10px] opacity-80">Download di</span>
+                  <span className="block text-[10px] opacity-80">Segera hadir di</span>
                   <span className="block font-display font-bold text-[17px]">App Store</span>
                 </span>
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2.5 bg-ink text-white border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
+              </span>
+              <span
+                aria-disabled="true"
+                className="inline-flex items-center gap-2.5 bg-ink text-white/50 border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 cursor-not-allowed"
               >
-                <Play size={24} className="fill-white" />
+                <Play size={24} className="fill-white/50" />
                 <span className="text-left">
-                  <span className="block text-[10px] opacity-80">Dapatkan di</span>
+                  <span className="block text-[10px] opacity-80">Segera hadir di</span>
                   <span className="block font-display font-bold text-[17px]">Google Play</span>
                 </span>
-              </a>
+              </span>
             </div>
           </div>
         </motion.div>

@@ -40,7 +40,6 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <span className="text-sm font-semibold text-ink cursor-pointer">Masuk</span>
           <Link
             href="/#download"
             className="inline-flex items-center px-[18px] py-[9px] rounded-full bg-green text-ink border-2 border-ink shadow-hard-sm text-sm font-bold transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
