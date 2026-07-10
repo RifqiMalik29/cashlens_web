@@ -1,89 +1,119 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ScanLine, PiggyBank, List, Tag, ShieldCheck } from 'lucide-react'
+import { Sparkles, ScanLine, CheckCheck, Wallet, ReceiptText, Tags, ShieldCheck } from 'lucide-react'
 
-const features = [
+const smallFeatures = [
   {
-    icon: ScanLine,
-    title: 'Receipt Scanning (OCR)',
-    description: 'Snap a photo of any receipt and watch your expenses get logged automatically — no typing required.',
+    icon: Wallet,
+    title: 'Budget per kategori',
+    description: 'Set batas tiap kategori, dapat peringatan sebelum kebablasan.',
+    bg: 'bg-coral',
+    shadow: 'shadow-[6px_6px_0_#FF6B4A]',
+    iconText: 'text-ink',
   },
   {
-    icon: PiggyBank,
-    title: 'Budget Management',
-    description: 'Set spending limits per category and track your progress in real time throughout the month.',
+    icon: ReceiptText,
+    title: 'Riwayat transaksi',
+    description: 'Semua pengeluaran tercatat rapi, bisa difilter & dicari.',
+    bg: 'bg-violet',
+    shadow: 'shadow-[6px_6px_0_#7A5BFF]',
+    iconText: 'text-white',
   },
   {
-    icon: List,
-    title: 'Transaction Tracking',
-    description: 'Your full expense history in one place. Search, filter, and review every purchase at a glance.',
-  },
-  {
-    icon: Tag,
-    title: 'Category Management',
-    description: 'Create and customize spending categories so your budget reflects the way you actually live.',
+    icon: Tags,
+    title: 'Kategori custom',
+    description: 'Bikin kategori sendiri sesuai gaya hidupmu, lengkap dengan ikon.',
+    bg: 'bg-sunny',
+    shadow: 'shadow-[6px_6px_0_#FFC93C]',
+    iconText: 'text-ink',
   },
   {
     icon: ShieldCheck,
-    title: 'Secure Authentication',
-    description: 'Your financial data is protected with industry-standard authentication. Only you see your numbers.',
+    title: 'Login aman',
+    description: 'Autentikasi terenkripsi & biometrik — datamu tetap privat.',
+    bg: 'bg-green',
+    shadow: 'shadow-[6px_6px_0_#13C97A]',
+    iconText: 'text-ink',
   },
 ]
 
 export default function Features() {
   return (
-    <section id="features" className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="fitur" className="bg-ink py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-dark">
-            Everything you need to manage your money
+        <div className="text-center max-w-[660px] mx-auto mb-13">
+          <div className="inline-flex items-center gap-2 bg-darktint-bg border border-darktint-border rounded-full px-4 py-2 text-sm font-bold text-darktint-text mb-6">
+            <Sparkles size={15} /> Fitur unggulan
+          </div>
+          <h2 className="font-display font-bold text-3xl sm:text-[48px] leading-[1.02] tracking-[-0.03em] text-white">
+            Semua yang kamu butuh untuk <span className="text-green">kelola uang</span>
           </h2>
-          <p className="mt-4 text-gray-500 max-w-xl mx-auto">
-            CashLens packs powerful personal finance tools into a clean, simple experience.
+          <p className="mt-4 text-lg text-darktint-muted leading-relaxed">
+            Dari scan struk sampai keamanan akun — dirancang untuk dipakai tiap hari.
           </p>
         </div>
 
-        {/* Row 1: 2 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 max-w-3xl mx-auto">
-          {features.slice(0, 2).map((feature, i) => (
-            <FeatureCard key={feature.title} feature={feature} index={i} />
-          ))}
-        </div>
+        {/* Bento grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* large OCR card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            className="md:col-span-2 bg-green border-2 border-ink shadow-[6px_6px_0_#0A7F4E] rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-7"
+          >
+            <div className="flex-1">
+              <span className="inline-flex w-[54px] h-[54px] rounded-2xl bg-white border-2 border-ink shadow-hard-sm items-center justify-center mb-5">
+                <ScanLine size={27} className="text-ink" />
+              </span>
+              <div className="font-display font-bold text-[28px] text-ink tracking-tight">Scan struk, beres.</div>
+              <p className="mt-3 text-[15.5px] text-[#0E3E28] leading-relaxed max-w-[360px]">
+                Foto struk belanjaan, OCR otomatis baca merchant, total, dan tanggal — langsung
+                masuk kategori yang tepat.
+              </p>
+            </div>
+            <div className="w-full sm:w-40 flex-shrink-0 bg-white border-2 border-ink rounded-2xl shadow-hard-sm p-4">
+              <div className="flex justify-between text-[10px] font-mono text-muted">
+                <span>STRUK</span>
+                <CheckCheck size={14} className="text-green" />
+              </div>
+              <div className="h-px bg-[#EEE] my-2" />
+              <div className="text-xs font-bold text-ink">Kopi Kenangan</div>
+              <div className="flex justify-between text-[11px] text-muted mt-1.5">
+                <span>2 item</span>
+                <span className="font-extrabold text-ink">Rp 87.000</span>
+              </div>
+              <div className="mt-2.5 text-[10px] bg-green-soft text-green-deep font-bold rounded-lg px-2 py-1.5 text-center">
+                → Kategori: Makan
+              </div>
+            </div>
+          </motion.div>
 
-        {/* Row 2: 3 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {features.slice(2).map((feature, i) => (
-            <FeatureCard key={feature.title} feature={feature} index={i + 2} />
-          ))}
+          {/* 4 equal cards */}
+          {smallFeatures.map((f, i) => {
+            const Icon = f.icon
+            return (
+              <motion.div
+                key={f.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: (i + 1) * 0.08 }}
+                className={`bg-white border-2 border-ink rounded-3xl p-7 ${f.shadow}`}
+              >
+                <span className={`inline-flex w-[52px] h-[52px] rounded-2xl border-2 border-ink shadow-hard-sm items-center justify-center mb-5 ${f.bg}`}>
+                  <Icon size={25} className={f.iconText} />
+                </span>
+                <div className="font-display font-bold text-[21px] text-ink">{f.title}</div>
+                <p className="mt-2 text-[14.5px] text-body leading-relaxed">{f.description}</p>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
-  )
-}
-
-function FeatureCard({
-  feature,
-  index,
-}: {
-  feature: (typeof features)[0]
-  index: number
-}) {
-  const Icon = feature.icon
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group p-6 rounded-2xl border border-gray-100 hover:border-primary hover:shadow-md transition-all cursor-default"
-    >
-      <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-secondary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-        <Icon size={22} className="text-primary group-hover:text-white transition-colors" />
-      </div>
-      <h3 className="text-lg font-semibold text-dark mb-2">{feature.title}</h3>
-      <p className="text-gray-500 text-sm leading-relaxed">{feature.description}</p>
-    </motion.div>
   )
 }

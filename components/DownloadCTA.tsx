@@ -1,43 +1,51 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Apple, Smartphone } from 'lucide-react'
+import { Apple, Play } from 'lucide-react'
 
 export default function DownloadCTA() {
   return (
-    <section id="download" className="bg-primary py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+    <section id="download" className="bg-warm py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="relative overflow-hidden bg-green border-2 border-ink shadow-hard-xl rounded-[32px] px-6 sm:px-14 py-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Take control of your finances today.
-          </h2>
-          <p className="text-white/80 text-lg mb-10 max-w-md mx-auto">
-            Download CashLens free and start scanning receipts in minutes.
-          </p>
+          <div className="absolute -right-16 -top-16 w-[260px] h-[260px] rounded-full bg-sunny border-2 border-ink pointer-events-none" />
+          <div className="absolute right-[170px] -bottom-[70px] w-[120px] h-[120px] rounded-[32px] bg-violet border-2 border-ink rotate-[16deg] pointer-events-none" />
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* App Store */}
-            <a
-              href="#"
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-primary transition-all"
-            >
-              <Apple size={20} />
-              Download on the App Store
-            </a>
-
-            {/* Google Play */}
-            <a
-              href="#"
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-primary transition-all"
-            >
-              <Smartphone size={20} />
-              Get it on Google Play
-            </a>
+          <div className="relative z-10 max-w-[620px]">
+            <h2 className="font-display font-bold text-[32px] sm:text-[52px] leading-[1] tracking-[-0.035em] text-ink">
+              Mulai pegang kendali uangmu hari ini.
+            </h2>
+            <p className="mt-5 text-lg text-[#0E3E28] font-medium leading-relaxed">
+              Gratis diunduh. Tanpa iklan mengganggu. Cukup foto struk pertamamu.
+            </p>
+            <div className="flex flex-wrap gap-3.5 mt-8">
+              <a
+                href="#"
+                className="inline-flex items-center gap-2.5 bg-ink text-white border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
+              >
+                <Apple size={26} />
+                <span className="text-left">
+                  <span className="block text-[10px] opacity-80">Download di</span>
+                  <span className="block font-display font-bold text-[17px]">App Store</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2.5 bg-ink text-white border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
+              >
+                <Play size={24} className="fill-white" />
+                <span className="text-left">
+                  <span className="block text-[10px] opacity-80">Dapatkan di</span>
+                  <span className="block font-display font-bold text-[17px]">Google Play</span>
+                </span>
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
