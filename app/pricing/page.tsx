@@ -5,7 +5,7 @@ import { Tag, BadgeCheck, Lock, Headset, Download } from 'lucide-react'
 
 export const metadata = {
   title: 'Harga | DompetKu',
-  description: 'Pilih paket DompetKu yang sesuai kebutuhanmu — Gratis, Pro, atau Family.',
+  description: 'Pilih paket DompetKu yang sesuai kebutuhanmu — Gratis atau Premium.',
 }
 
 const trustPoints = [
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: 'Metode pembayaran apa yang didukung?',
-    a: 'Kartu kredit/debit, e-wallet (GoPay, OVO, DANA), dan transfer bank melalui virtual account.',
+    a: 'Pembayaran diproses lewat App Store atau Google Play sesuai akun kamu — metode pembayaran yang tersimpan di sana otomatis berlaku.',
   },
   {
     q: 'Bagaimana kalau saya berhenti berlangganan?',

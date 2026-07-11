@@ -124,9 +124,10 @@ export default function TermsPage() {
                 akhir tiap periode kecuali dibatalkan sebelum tanggal perpanjangan.
               </p>
               <p>
-                Kamu dapat membatalkan kapan saja; akses berbayar tetap berlaku hingga akhir
-                periode yang sudah dibayar. Kami menyediakan jaminan uang kembali 30 hari untuk
-                pembelian pertama. Harga dapat berubah dengan pemberitahuan sebelumnya.
+                Kamu dapat membatalkan kapan saja melalui pengaturan akun App Store atau Google
+                Play; akses berbayar tetap berlaku hingga akhir periode yang sudah dibayar.
+                Kebijakan pengembalian dana mengikuti ketentuan App Store atau Google Play sesuai
+                platform pembelianmu. Harga dapat berubah dengan pemberitahuan sebelumnya.
               </p>
             </section>
 
