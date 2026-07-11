@@ -45,7 +45,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <div className="inline-flex items-center gap-2 bg-white border-2 border-ink shadow-hard-sm rounded-full px-4 py-2 text-sm font-bold text-ink mb-7">
+          <div className="inline-flex items-center gap-2 bg-white border-2 border-ink shadow-hard-sm rounded-full px-4 py-2 text-sm font-bold text-ink mb-10">
             <span className="w-2 h-2 rounded-full bg-green" /> Scan · Budget · Kendali
           </div>
           <h1 className="font-display font-bold text-[42px] sm:text-6xl lg:text-[68px] leading-[0.97] tracking-[-0.04em] text-ink">
