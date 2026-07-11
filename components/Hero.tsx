@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
           <h1 className="font-display font-bold text-[42px] sm:text-6xl lg:text-[68px] leading-[0.97] tracking-[-0.04em] text-ink">
             Tahu ke mana{' '}
-            <span className="bg-sunny px-2.5 py-1.5 rounded-[10px] leading-none box-decoration-clone">uangmu</span>{' '}
+            <span className="bg-sunny px-2 py-0.5 rounded-lg leading-none box-decoration-clone">uangmu</span>{' '}
             pergi.
           </h1>
           <p className="mt-6 text-lg sm:text-[19px] leading-relaxed text-body max-w-[460px]">
