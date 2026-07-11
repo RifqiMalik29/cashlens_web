@@ -22,7 +22,7 @@ export default function Navbar() {
           <span className="w-8 h-8 rounded-[10px] bg-green border-2 border-ink flex items-center justify-center shadow-hard-sm">
             <ScanLine size={18} className="text-ink" />
           </span>
-          <span className="font-display font-bold text-lg text-ink tracking-tight">CashLens</span>
+          <span className="font-display font-bold text-lg text-ink tracking-tight">DompetKu</span>
         </Link>
 
         {/* Desktop nav */}

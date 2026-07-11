@@ -4,8 +4,8 @@ import PricingPlans from '@/components/PricingPlans'
 import { Tag, BadgeCheck, Lock, Headset, Download } from 'lucide-react'
 
 export const metadata = {
-  title: 'Harga | CashLens',
-  description: 'Pilih paket CashLens yang sesuai kebutuhanmu — Gratis, Pro, atau Family.',
+  title: 'Harga | DompetKu',
+  description: 'Pilih paket DompetKu yang sesuai kebutuhanmu — Gratis, Pro, atau Family.',
 }
 
 const trustPoints = [
@@ -121,7 +121,7 @@ export default function PricingPage() {
             <div className="absolute -left-12 -bottom-16 w-[200px] h-[200px] rounded-full bg-violet opacity-40 pointer-events-none" />
             <div className="relative z-10">
               <h2 className="font-display font-bold text-3xl sm:text-[42px] leading-[1.02] tracking-[-0.03em] text-white">
-                Coba CashLens gratis hari ini
+                Coba DompetKu gratis hari ini
               </h2>
               <p className="mt-4 text-[17px] text-darktint-muted leading-relaxed">
                 Scan struk pertamamu dalam 2 menit. Tanpa kartu kredit.

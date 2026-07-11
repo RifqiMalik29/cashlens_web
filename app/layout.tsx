@@ -17,9 +17,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'CashLens — Scan, track, and budget your expenses',
+  title: 'DompetKu — Scan, track, and budget your expenses',
   description:
-    'CashLens eliminates manual expense tracking by digitizing receipts and simplifying budgeting for individuals and small households.',
+    'DompetKu eliminates manual expense tracking by digitizing receipts and simplifying budgeting for individuals and small households.',
 }
 
 export default function RootLayout({

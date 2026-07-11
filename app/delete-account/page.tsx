@@ -15,8 +15,8 @@ import {
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'Delete Account | CashLens',
-  description: 'Instructions and requests for deleting your CashLens account.',
+  title: 'Delete Account | DompetKu',
+  description: 'Instructions and requests for deleting your DompetKu account.',
 }
 
 const steps = [
@@ -27,7 +27,7 @@ const steps = [
     title: 'Open the Settings tab',
     body: (
       <>
-        Open the CashLens app and navigate to the <strong className="text-ink">Settings</strong>{' '}
+        Open the DompetKu app and navigate to the <strong className="text-ink">Settings</strong>{' '}
         tab.
       </>
     ),
@@ -92,7 +92,7 @@ export default function DeleteAccount() {
               <Trash2 size={15} /> Manage account
             </div>
             <h1 className="font-display font-bold text-4xl sm:text-[52px] leading-[1] tracking-[-0.035em] text-white">
-              Delete your CashLens account
+              Delete your DompetKu account
             </h1>
             <p className="mt-4 text-base sm:text-[17px] text-darktint-muted leading-relaxed max-w-[560px]">
               You can delete your account anytime directly from the app. Follow the steps below —

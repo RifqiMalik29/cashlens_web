@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import { ScrollText, Mail, ShieldCheck } from 'lucide-react'
 
 export const metadata = {
-  title: 'Syarat & Ketentuan | CashLens',
-  description: 'Syarat & Ketentuan penggunaan aplikasi dan layanan CashLens.',
+  title: 'Syarat & Ketentuan | DompetKu',
+  description: 'Syarat & Ketentuan penggunaan aplikasi dan layanan DompetKu.',
 }
 
 function SectionHeading({ index, children }: { index: string; children: React.ReactNode }) {
@@ -51,7 +51,7 @@ export default function TermsPage() {
               Syarat &amp; Ketentuan
             </h1>
             <p className="mt-4 text-base sm:text-[17px] text-darktint-muted leading-relaxed max-w-[560px]">
-              Ketentuan ini mengatur penggunaan aplikasi dan layanan CashLens. Mohon dibaca dengan
+              Ketentuan ini mengatur penggunaan aplikasi dan layanan DompetKu. Mohon dibaca dengan
               saksama sebelum menggunakan.
             </p>
             <div className="font-mono text-[13px] text-[#7FA592] mt-6">Terakhir diperbarui: 1 Juli 2026</div>
@@ -76,7 +76,7 @@ export default function TermsPage() {
             <section id="t1" className="mb-10">
               <SectionHeading index="01">Penerimaan ketentuan</SectionHeading>
               <p>
-                Dengan mengunduh, mengakses, atau menggunakan aplikasi CashLens (&ldquo;Layanan&rdquo;),
+                Dengan mengunduh, mengakses, atau menggunakan aplikasi DompetKu (&ldquo;Layanan&rdquo;),
                 kamu setuju untuk terikat oleh Syarat &amp; Ketentuan ini serta{' '}
                 <Link href="/privacy">Kebijakan Privasi</Link> kami. Jika kamu tidak menyetujui
                 salah satu bagian dari ketentuan ini, mohon untuk tidak menggunakan Layanan.
@@ -119,7 +119,7 @@ export default function TermsPage() {
             <section id="t4" className="mb-10">
               <SectionHeading index="04">Langganan &amp; pembayaran</SectionHeading>
               <p className="mb-4">
-                CashLens menawarkan paket gratis dan berbayar. Detail paket tersedia di halaman{' '}
+                DompetKu menawarkan paket gratis dan berbayar. Detail paket tersedia di halaman{' '}
                 <Link href="/pricing">Harga</Link>. Langganan berbayar diperpanjang otomatis di
                 akhir tiap periode kecuali dibatalkan sebelum tanggal perpanjangan.
               </p>
@@ -153,7 +153,7 @@ export default function TermsPage() {
             <section id="t6" className="mb-10">
               <SectionHeading index="06">Kekayaan intelektual</SectionHeading>
               <p>
-                Seluruh hak atas aplikasi, termasuk logo, desain, dan kode CashLens, dimiliki
+                Seluruh hak atas aplikasi, termasuk logo, desain, dan kode DompetKu, dimiliki
                 oleh kami dan dilindungi hukum yang berlaku. Ketentuan ini tidak memberimu hak
                 untuk menggunakan merek dagang kami tanpa persetujuan tertulis.
               </p>
@@ -164,7 +164,7 @@ export default function TermsPage() {
             <section id="t7" className="mb-10">
               <SectionHeading index="07">Penafian layanan</SectionHeading>
               <p>
-                CashLens adalah alat bantu pencatatan keuangan pribadi,{' '}
+                DompetKu adalah alat bantu pencatatan keuangan pribadi,{' '}
                 <strong className="text-ink">bukan nasihat keuangan, investasi, atau pajak</strong>.
                 Layanan disediakan &ldquo;sebagaimana adanya&rdquo; tanpa jaminan bahwa akan
                 selalu bebas kesalahan atau tanpa gangguan. Pemindaian OCR dapat menghasilkan
@@ -177,7 +177,7 @@ export default function TermsPage() {
             <section id="t8" className="mb-10">
               <SectionHeading index="08">Batasan tanggung jawab</SectionHeading>
               <p>
-                Sejauh diizinkan oleh hukum, CashLens tidak bertanggung jawab atas kerugian tidak
+                Sejauh diizinkan oleh hukum, DompetKu tidak bertanggung jawab atas kerugian tidak
                 langsung, insidental, atau konsekuensial yang timbul dari penggunaan Layanan,
                 termasuk keputusan finansial yang kamu ambil berdasarkan data di aplikasi.
               </p>

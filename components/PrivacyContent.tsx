@@ -40,7 +40,7 @@ export default function PrivacyContent() {
               Privacy Policy
             </h1>
             <p className="mt-4 text-base sm:text-[17px] text-darktint-muted leading-relaxed max-w-[560px]">
-              We designed CashLens so your data stays yours. Full details on what we collect and
+              We designed DompetKu so your data stays yours. Full details on what we collect and
               how we protect it are below.
             </p>
 
@@ -72,7 +72,7 @@ export default function PrivacyContent() {
                 <section className="mb-10">
                   <SectionHeading index="01">Introduction</SectionHeading>
                   <p>
-                    CashLens (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to
+                    DompetKu (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to
                     protecting your privacy. This Privacy Policy explains how we collect, use,
                     disclose, and safeguard your information when you use our mobile application
                     (&quot;App&quot;).
@@ -147,7 +147,7 @@ export default function PrivacyContent() {
 
                 <section className="mb-10">
                   <SectionHeading index="04">Third-Party Services</SectionHeading>
-                  <p className="mb-4">We use trusted providers to power CashLens:</p>
+                  <p className="mb-4">We use trusted providers to power DompetKu:</p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong className="text-ink">Supabase:</strong> Cloud sync &amp; authentication.</li>
                     <li><strong className="text-ink">Google Cloud (Gemini AI):</strong> Receipt parsing. Extracted text is sent temporarily for processing and is not used for training.</li>
@@ -192,7 +192,7 @@ export default function PrivacyContent() {
                 <section className="mb-10">
                   <SectionHeading index="01">Pendahuluan</SectionHeading>
                   <p>
-                    CashLens (&quot;kami&quot;) berkomitmen untuk melindungi privasi Anda.
+                    DompetKu (&quot;kami&quot;) berkomitmen untuk melindungi privasi Anda.
                     Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan,
                     dan melindungi informasi Anda saat menggunakan aplikasi mobile kami.
                   </p>

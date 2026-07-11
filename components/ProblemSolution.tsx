@@ -26,7 +26,7 @@ export default function ProblemSolution() {
           <h2 className="font-display font-bold text-3xl sm:text-[46px] leading-[1.02] tracking-[-0.03em] text-ink">
             Catat manual itu melelahkan.
             <br />
-            CashLens bikin otomatis.
+            DompetKu bikin otomatis.
           </h2>
         </div>
 
@@ -39,7 +39,7 @@ export default function ProblemSolution() {
             transition={{ duration: 0.5 }}
             className="bg-white border-2 border-ink shadow-hard rounded-3xl p-8"
           >
-            <div className="font-mono text-xs font-bold text-coral mb-4">TANPA CASHLENS</div>
+            <div className="font-mono text-xs font-bold text-coral mb-4">TANPA DOMPETKU</div>
             <div className="flex flex-col gap-4">
               {problems.map((p) => (
                 <div key={p} className="flex gap-3 items-start">
@@ -60,7 +60,7 @@ export default function ProblemSolution() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="bg-green border-2 border-ink shadow-[6px_6px_0_#0A7F4E] rounded-3xl p-8"
           >
-            <div className="font-mono text-xs font-bold text-[#0A3D26] mb-4">DENGAN CASHLENS</div>
+            <div className="font-mono text-xs font-bold text-[#0A3D26] mb-4">DENGAN DOMPETKU</div>
             <div className="flex flex-col gap-4">
               {solutions.map((s) => (
                 <div key={s} className="flex gap-3 items-start">

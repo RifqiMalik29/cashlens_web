@@ -25,7 +25,7 @@ export default function Footer() {
               <span className="w-8 h-8 rounded-[10px] bg-green border-2 border-white flex items-center justify-center">
                 <ScanLine size={18} className="text-ink" />
               </span>
-              <span className="font-display font-bold text-lg text-white">CashLens</span>
+              <span className="font-display font-bold text-lg text-white">DompetKu</span>
             </Link>
             <p className="text-sm text-darktint-muted leading-relaxed max-w-[280px] mb-5">
               App personal finance yang bikin catat pengeluaran jadi otomatis. Scan struk, atur
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-darktint-border mt-11 pt-6 flex flex-wrap justify-between items-center gap-3">
-          <span className="text-[13px] text-[#6E8C7D]">© {new Date().getFullYear()} CashLens. Dibuat dengan ❤️ di Indonesia.</span>
+          <span className="text-[13px] text-[#6E8C7D]">© {new Date().getFullYear()} DompetKu. Dibuat dengan ❤️ di Indonesia.</span>
           <span className="text-[13px] text-[#6E8C7D]">Bahasa: Indonesia</span>
         </div>
       </div>
