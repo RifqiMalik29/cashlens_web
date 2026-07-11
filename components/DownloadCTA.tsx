@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Apple, Play } from 'lucide-react'
+import Image from 'next/image'
 
 export default function DownloadCTA() {
   return (
@@ -24,28 +24,15 @@ export default function DownloadCTA() {
             <p className="mt-5 text-lg text-[#0E3E28] font-medium leading-relaxed">
               Gratis diunduh. Tanpa iklan mengganggu. Cukup foto struk pertamamu.
             </p>
-            <div className="flex flex-wrap gap-3.5 mt-8">
-              <span
-                aria-disabled="true"
-                className="inline-flex items-center gap-2.5 bg-ink text-white/50 border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 cursor-not-allowed"
-              >
-                <Apple size={26} />
-                <span className="text-left">
-                  <span className="block text-[10px] opacity-80">Segera hadir di</span>
-                  <span className="block font-display font-bold text-[17px]">App Store</span>
-                </span>
+            <div className="flex flex-wrap items-center gap-3.5 mt-8">
+              <span aria-disabled="true" className="inline-block opacity-50 grayscale cursor-not-allowed">
+                <Image src="/badges/app-store.svg" alt="Segera hadir di App Store" width={135} height={45} />
               </span>
-              <span
-                aria-disabled="true"
-                className="inline-flex items-center gap-2.5 bg-ink text-white/50 border-2 border-ink shadow-[4px_4px_0_#0A3D26] rounded-2xl px-5 py-3 cursor-not-allowed"
-              >
-                <Play size={24} className="fill-white/50" />
-                <span className="text-left">
-                  <span className="block text-[10px] opacity-80">Segera hadir di</span>
-                  <span className="block font-display font-bold text-[17px]">Google Play</span>
-                </span>
+              <span aria-disabled="true" className="inline-block opacity-50 grayscale cursor-not-allowed">
+                <Image src="/badges/google-play.png" alt="Segera hadir di Google Play" width={152} height={59} />
               </span>
             </div>
+            <p className="text-xs text-[#0E3E28]/70 font-medium mt-2.5">Segera hadir di App Store &amp; Google Play.</p>
           </div>
         </motion.div>
       </div>
