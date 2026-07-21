@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-darktint-border mt-11 pt-6 flex flex-wrap justify-between items-center gap-3">
-          <span className="text-[13px] text-[#6E8C7D]">© {new Date().getFullYear()} DompetKu. Dibuat dengan ❤️ di Indonesia.</span>
+          <span className="text-[13px] text-[#6E8C7D]">© {new Date().getFullYear()} DompetKu.</span>
           <span className="text-[13px] text-[#6E8C7D]">Bahasa: Indonesia</span>
         </div>
       </div>
