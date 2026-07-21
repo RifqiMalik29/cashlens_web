@@ -12,7 +12,7 @@ export default function AnnouncementBar() {
     <div className="relative bg-ink text-white text-center text-sm font-semibold py-2.5 px-4 flex items-center justify-center gap-2">
       <span className="w-1.5 h-1.5 rounded-full bg-green flex-shrink-0" />
       <span>
-        DompetKu 2.0 sudah rilis — scan struk makin cepat &amp; akurat.{' '}
+        DompetKu 1.0 sudah rilis — scan struk makin cepat &amp; akurat.{' '}
         <a href="/#download" className="inline-flex items-center gap-1 text-sunny hover:underline">
           Coba sekarang <ArrowRight size={14} />
         </a>
