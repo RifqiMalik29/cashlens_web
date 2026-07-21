@@ -25,14 +25,19 @@ export default function DownloadCTA() {
               Gratis diunduh. Tanpa iklan mengganggu. Cukup foto struk pertamamu.
             </p>
             <div className="flex flex-wrap items-center gap-3.5 mt-8">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.cashlens.app&hl=id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block transition-transform hover:-translate-y-0.5"
+              >
+                <Image src="/badges/google-play.png" alt="Dapatkan di Google Play" width={152} height={59} />
+              </a>
               <span aria-disabled="true" className="inline-block opacity-50 grayscale cursor-not-allowed">
                 <Image src="/badges/app-store.svg" alt="Segera hadir di App Store" width={135} height={45} />
               </span>
-              <span aria-disabled="true" className="inline-block opacity-50 grayscale cursor-not-allowed">
-                <Image src="/badges/google-play.png" alt="Segera hadir di Google Play" width={152} height={59} />
-              </span>
             </div>
-            <p className="text-xs text-[#0E3E28]/70 font-medium mt-2.5">Segera hadir di App Store &amp; Google Play.</p>
+            <p className="text-xs text-[#0E3E28]/70 font-medium mt-2.5">Tersedia di Google Play. App Store segera hadir.</p>
           </div>
         </motion.div>
       </div>
