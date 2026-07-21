@@ -17,9 +17,41 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'DompetKu — Scan, track, and budget your expenses',
+  metadataBase: new URL('https://mydompetaku.com'),
+  title: 'DompetKu — Scan struk, atur budget, pegang kendali',
   description:
-    'DompetKu eliminates manual expense tracking by digitizing receipts and simplifying budgeting for individuals and small households.',
+    'DompetKu bikin catat pengeluaran jadi otomatis. Scan struk, atur budget per kategori, dan pantau transaksi — semua dalam satu app personal finance.',
+  applicationName: 'DompetKu',
+  keywords: [
+    'aplikasi keuangan',
+    'catat pengeluaran',
+    'scan struk',
+    'budget',
+    'personal finance',
+    'DompetKu',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'DompetKu',
+    title: 'DompetKu — Scan struk, atur budget, pegang kendali',
+    description:
+      'DompetKu bikin catat pengeluaran jadi otomatis. Scan struk, atur budget per kategori, dan pantau transaksi — semua dalam satu app.',
+    url: 'https://mydompetaku.com',
+    locale: 'id_ID',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DompetKu — Scan struk, atur budget, pegang kendali',
+    description:
+      'DompetKu bikin catat pengeluaran jadi otomatis. Scan struk, atur budget per kategori, dan pantau transaksi.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
