@@ -109,7 +109,23 @@ export default function PrivacyContent() {
                         which sends it to Google Cloud (Gemini AI) for parsing. The photo is
                         processed in server memory only — it is never written to disk or cloud
                         storage, and is discarded immediately after the scan completes. We do not
-                        retain a copy of your receipt photos.
+                        retain a copy of your receipt photos, except when a scan fails to
+                        process: in that case, we may temporarily store the photo for up to 48
+                        hours to investigate and improve scan accuracy, after which it is
+                        automatically and permanently deleted. Successfully processed receipts
+                        are never retained under any circumstance.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="font-display font-semibold text-lg text-ink mb-2">2.3a Failed Scan Retention</h3>
+                      <p>
+                        If a receipt photo cannot be successfully parsed, we may retain that
+                        specific photo for up to 48 hours in encrypted cloud storage, accessible
+                        only to the app&apos;s developer, solely to diagnose and fix scanning
+                        issues. This photo is automatically and permanently deleted after 48
+                        hours regardless of whether the issue was resolved. You may request
+                        immediate deletion of a retained failed-scan photo at any time by
+                        emailing <code>cashlens.app@gmail.com</code>.
                       </p>
                     </div>
                     <div>
@@ -219,7 +235,23 @@ export default function PrivacyContent() {
                       yang kemudian mengirimkannya ke Google Cloud (Gemini AI) untuk diproses.
                       Foto hanya diproses di memori server — tidak pernah ditulis ke disk atau
                       penyimpanan cloud, dan langsung dihapus setelah proses pemindaian selesai.
-                      Kami tidak menyimpan salinan foto strukmu.
+                      Kami tidak menyimpan salinan foto strukmu, kecuali saat pemindaian gagal
+                      diproses: dalam kasus itu, kami dapat menyimpan foto sementara hingga 48
+                      jam untuk menyelidiki dan memperbaiki akurasi pemindaian, setelah itu foto
+                      otomatis dihapus permanen. Struk yang berhasil diproses tidak pernah
+                      disimpan dalam kondisi apa pun.
+                    </p>
+                  </div>
+                  <div className="mb-5">
+                    <h3 className="font-display font-semibold text-lg text-ink mb-2">2.3a Retensi Pemindaian Gagal</h3>
+                    <p>
+                      Jika foto struk tidak berhasil diproses, kami dapat menyimpan foto tersebut
+                      hingga 48 jam di penyimpanan cloud terenkripsi, yang hanya bisa diakses oleh
+                      developer aplikasi, semata-mata untuk mendiagnosis dan memperbaiki masalah
+                      pemindaian. Foto ini otomatis dihapus permanen setelah 48 jam, terlepas
+                      apakah masalahnya sudah teratasi atau belum. Kamu bisa meminta penghapusan
+                      segera atas foto pemindaian gagal yang tersimpan kapan saja dengan mengirim
+                      email ke <code>cashlens.app@gmail.com</code>.
                     </p>
                   </div>
                   <div className="mb-5">
