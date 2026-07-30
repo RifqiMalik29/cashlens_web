@@ -66,7 +66,7 @@ export default function PrivacyContent() {
               <div className="text-[16px] leading-[1.75] text-body">
                 <p className="text-sm text-muted mb-10">
                   <strong className="text-ink">Effective Date:</strong> April 6, 2026 |{' '}
-                  <strong className="text-ink">Last Updated:</strong> April 6, 2026
+                  <strong className="text-ink">Last Updated:</strong> July 30, 2026
                 </p>
 
                 <section className="mb-10">
@@ -104,9 +104,12 @@ export default function PrivacyContent() {
                     <div className="bg-green-soft border-2 border-green rounded-2xl px-5 py-4">
                       <h3 className="font-display font-semibold text-lg text-ink mb-2">2.3 Camera Access</h3>
                       <p className="text-[#0E3E28]">
-                        The app requests camera permission to scan receipts. Photos are processed
-                        on-device — only the extracted text and data are sent to Google Cloud
-                        (Gemini AI) for parsing. No photos are stored or uploaded.
+                        The app requests camera permission to scan receipts. When you scan a
+                        receipt, the photo is uploaded securely (HTTPS) to our backend server,
+                        which sends it to Google Cloud (Gemini AI) for parsing. The photo is
+                        processed in server memory only — it is never written to disk or cloud
+                        storage, and is discarded immediately after the scan completes. We do not
+                        retain a copy of your receipt photos.
                       </p>
                     </div>
                     <div>
@@ -135,7 +138,7 @@ export default function PrivacyContent() {
                   <SectionHeading index="03">How We Use Your Data</SectionHeading>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong className="text-ink">Transaction tracking:</strong> Store and display your income and expense records.</li>
-                    <li><strong className="text-ink">Receipt parsing:</strong> Send extracted receipt text to Google Cloud (Gemini AI) to identify amounts, merchants, and dates.</li>
+                    <li><strong className="text-ink">Receipt parsing:</strong> Upload receipt photos to Google Cloud (Gemini AI) to identify amounts, merchants, and dates. Photos are processed in memory and discarded immediately after parsing.</li>
                     <li><strong className="text-ink">Notification parsing:</strong> Send bank notification content to our backend to automatically log transactions.</li>
                     <li><strong className="text-ink">Budget alerts:</strong> Analyze your spending against set limits to trigger in-app notifications.</li>
                     <li><strong className="text-ink">App improvement:</strong> Analyze anonymized crash reports and usage patterns to fix bugs and improve features.</li>
@@ -150,7 +153,7 @@ export default function PrivacyContent() {
                   <p className="mb-4">We use trusted providers to power DompetKu:</p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong className="text-ink">Supabase:</strong> Cloud sync &amp; authentication.</li>
-                    <li><strong className="text-ink">Google Cloud (Gemini AI):</strong> Receipt parsing. Extracted text is sent temporarily for processing and is not used for training.</li>
+                    <li><strong className="text-ink">Google Cloud (Gemini AI):</strong> Receipt parsing. Receipt photos are sent temporarily for processing and are not used for training.</li>
                   </ul>
                 </section>
 
@@ -186,7 +189,7 @@ export default function PrivacyContent() {
               <div className="text-[16px] leading-[1.75] text-body">
                 <p className="text-sm text-muted mb-10">
                   <strong className="text-ink">Tanggal Berlaku:</strong> 6 April 2026 |{' '}
-                  <strong className="text-ink">Pembaruan Terakhir:</strong> 6 April 2026
+                  <strong className="text-ink">Pembaruan Terakhir:</strong> 30 Juli 2026
                 </p>
 
                 <section className="mb-10">
@@ -211,9 +214,12 @@ export default function PrivacyContent() {
                   <div className="bg-green-soft border-2 border-green rounded-2xl px-5 py-4 mb-5">
                     <h3 className="font-display font-semibold text-lg text-ink mb-2">2.3 Akses Kamera</h3>
                     <p className="text-[#0E3E28]">
-                      Aplikasi meminta izin kamera untuk memindai struk belanja. Foto diproses di
-                      perangkat — hanya teks dan data yang diekstrak yang dikirim ke Google Cloud
-                      (Gemini AI) untuk diproses. Tidak ada foto yang disimpan atau diunggah.
+                      Aplikasi meminta izin kamera untuk memindai struk belanja. Saat kamu
+                      memindai struk, foto diunggah secara aman (HTTPS) ke server backend kami,
+                      yang kemudian mengirimkannya ke Google Cloud (Gemini AI) untuk diproses.
+                      Foto hanya diproses di memori server — tidak pernah ditulis ke disk atau
+                      penyimpanan cloud, dan langsung dihapus setelah proses pemindaian selesai.
+                      Kami tidak menyimpan salinan foto strukmu.
                     </p>
                   </div>
                   <div className="mb-5">
@@ -241,7 +247,7 @@ export default function PrivacyContent() {
                   <SectionHeading index="03">Bagaimana Kami Menggunakan Data Anda</SectionHeading>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong className="text-ink">Pencatatan transaksi:</strong> Menyimpan dan menampilkan catatan pemasukan dan pengeluaran Anda.</li>
-                    <li><strong className="text-ink">Pemindaian struk:</strong> Mengirim teks struk yang diekstrak ke Google Cloud (Gemini AI) untuk mengidentifikasi jumlah, pedagang, dan tanggal.</li>
+                    <li><strong className="text-ink">Pemindaian struk:</strong> Mengunggah foto struk ke Google Cloud (Gemini AI) untuk mengidentifikasi jumlah, pedagang, dan tanggal. Foto diproses di memori dan langsung dihapus setelah pemindaian selesai.</li>
                     <li><strong className="text-ink">Pemrosesan notifikasi:</strong> Mengirim konten notifikasi bank ke server kami untuk mencatat transaksi secara otomatis.</li>
                     <li><strong className="text-ink">Peringatan anggaran:</strong> Menganalisis pengeluaran Anda terhadap batas yang ditetapkan untuk memicu notifikasi dalam aplikasi.</li>
                     <li><strong className="text-ink">Peningkatan aplikasi:</strong> Menganalisis laporan crash yang dianonimkan dan pola penggunaan untuk memperbaiki bug dan meningkatkan fitur.</li>
@@ -255,7 +261,7 @@ export default function PrivacyContent() {
                   <SectionHeading index="04">Layanan Pihak Ketiga</SectionHeading>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong className="text-ink">Supabase:</strong> Sinkronisasi awan &amp; autentikasi.</li>
-                    <li><strong className="text-ink">Google Cloud (Gemini AI):</strong> Pemindaian struk belanja. Teks struk dikirim sementara untuk diproses dan tidak digunakan untuk pelatihan AI.</li>
+                    <li><strong className="text-ink">Google Cloud (Gemini AI):</strong> Pemindaian struk belanja. Foto struk dikirim sementara untuk diproses dan tidak digunakan untuk pelatihan AI.</li>
                   </ul>
                 </section>
 
